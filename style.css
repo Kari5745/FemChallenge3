@@ -1,0 +1,135 @@
+:root{
+    /*Colores*/
+    /*Primary Colors*/
+    --Pale-blue:hsl(225, 100%, 94%);
+    --Bright-blue:hsl(245, 75%, 52%);
+
+    /*Neutral*/
+    --Very-pale-blue:hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --white: #ffffff;
+
+    /*font*/
+    --fs-700:1.5rem;
+    --fs-400:1rem;
+    --fs-300:0.875rem;
+
+    --fw-500:500;
+    --fw-700:700;
+    --fw-900:900;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+html{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background: var(--Pale-blue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+h1{
+    font-weight: var(--fw-900);
+    font-size: var(--fs-700);
+    margin-bottom: 16px;
+}
+
+h5{
+    font-weight: var(--fw-900);
+    font-size: var(--fs-400);
+}
+
+p{
+    color: var(--Desaturated-blue);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-700);
+    line-height: 1.8;
+}
+
+.order-card{
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-info{
+    padding: 7%;
+    text-align: center;
+}
+
+.plan-box{
+    display: flex;
+    padding: 16px 16px;
+    margin: 16px 0;
+    border-radius: 10px;
+    justify-content: space-around;
+    background-color: var(--Very-pale-blue);
+}
+
+.plan-box-text{
+    text-align: start;
+}
+
+button{
+    cursor: pointer;
+}
+
+.change-btn{
+    background: transparent;
+    border: 0;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    font-weight: var(--fw-700);
+
+}
+
+.proceed-btn{
+    background-color: var(--Bright-blue);
+    color: var(--white);
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 8px;
+    margin: 16px 0;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-700);
+}
+
+.cancel-btn{
+    background:transparent;
+    border:0;
+    color: var(--Desaturated-blue);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-300);
+}
+
+.shadow{
+    box-shadow: 1px 15px 8px 2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 15px 8px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow:1px 15px 8px 2px rgba(0,0,0,0.15);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
